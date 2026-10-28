@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0b1d3a;--navy2:#132b52;--blue:#2b8cf0;--blue-d:#1a6fc9;--ink:#16202e;--muted:#5b6677;--bg:#fff;--soft:#f2f5f9;--line:#dfe5ee}
+:root{--navy:#0b1d3a;--navy2:#132b52;--blue:#2b8cf0;--blue-d:#1a6fc9;--ink:#16202e;--muted:#5b6677;--bg:#fff;--soft:#f2f5f9;--line:#dfe5ee;--blue-a:#2371c2;--field:#91959b}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font:17px/1.6 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
@@ -18,7 +18,7 @@ a{color:var(--blue-d)}
 img{max-width:100%;display:block}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
-.btn-blue{background:var(--blue);color:#fff}
+.btn-blue{background:var(--blue-a);color:#fff}
 .btn-blue:hover{background:var(--blue-d)}
 .btn-ghost{border-color:#fff;color:#fff}
 .btn-ghost:hover{background:#fff;color:var(--navy)}
@@ -36,20 +36,21 @@ header .btn{padding:10px 16px;font-size:17px}
 /* hero */
 .hero{position:relative;isolation:isolate;background:var(--navy);color:#fff;overflow:hidden}
 .hero .bgimg{position:absolute;inset:0;z-index:-1;background:url(img/shop-2.jpg) center/cover;opacity:.45}
-.hero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,var(--navy) 0 40%,rgba(11,29,58,.6) 75%,rgba(11,29,58,.2))}
+.hero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,var(--navy) 0 40%,rgba(11,29,58,.75) 75%,rgba(11,29,58,.5))}
 .hero .wrap{padding-top:96px;padding-bottom:104px}
 .hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:#cfe3ff;margin-bottom:18px}
-.stars{color:#ffc93c;letter-spacing:2px}
+.stars{color:#ad8929;letter-spacing:2px}
+.hero .stars{color:#ffc93c}
 .hero h1{font-size:clamp(44px,7vw,84px);max-width:720px}
 .hero h1 span{color:var(--blue)}
 .hero p{font-size:20px;max-width:560px;color:#dbe6f5;margin:20px 0 32px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
 
 /* strip */
-.strip{background:var(--blue);color:#fff}
+.strip{background:var(--blue-a);color:#fff}
 .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:22px;padding-bottom:22px}
 .strip b{display:block;font:800 24px "Barlow Condensed",sans-serif;text-transform:uppercase}
-.strip span{color:#e3f0ff}
+.strip span{color:#ecf5ff}
 
 section{padding:88px 0}
 .kicker{color:var(--blue-d);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;margin-bottom:8px}
@@ -95,7 +96,7 @@ form{background:var(--soft);border-radius:12px;padding:32px;border-top:4px solid
 form h3{font-size:32px;color:var(--navy);margin-bottom:6px}
 form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 label{display:block;font-weight:600;font-size:15px;margin-top:14px}
-input,select,textarea{width:100%;margin-top:5px;padding:12px;font:inherit;border:1px solid var(--line);border-radius:6px;background:#fff}
+input,select,textarea{width:100%;margin-top:5px;padding:12px;font:inherit;border:1px solid var(--field);border-radius:6px;background:#fff}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
 textarea{min-height:96px;resize:vertical}
 form .btn{width:100%;justify-content:center;margin-top:20px}
@@ -151,7 +152,7 @@ form .btn{width:100%;justify-content:center;margin-top:20px}
     <div class="bgimg" aria-hidden="true"></div>
     <div class="shade" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="eyebrow"><span class="stars">★★★★★</span> 5.0 on Google · Beach Rd, Hamilton</div>
+      <div class="eyebrow"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google · Beach Rd, Hamilton</div>
       <h1>Honest repairs.<br><span>Fair prices.</span></h1>
       <p>Family-run car assessment and repair in Hamilton's east end. We explain what your car needs, fix it right, and never overcharge.</p>
       <div class="ctas">
@@ -223,20 +224,20 @@ form .btn{width:100%;justify-content:center;margin-top:20px}
     <div class="wrap">
       <div class="kicker">Reviews</div>
       <h2>What customers say</h2>
-      <div class="gbadge"><span class="stars">★★★★★</span> 5.0 average on Google</div>
+      <div class="gbadge"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 average on Google</div>
       <div class="rgrid">
         <blockquote>
-          <span class="stars">★★★★★</span>
+          <span class="stars" aria-hidden="true">★★★★★</span>
           <p>“Amazing service! Honest, fast, and reliable. They fixed my car without any issues and didn’t overcharge me. Highly recommend!”</p>
           <footer>Khadijah H.<small>Google review</small></footer>
         </blockquote>
         <blockquote>
-          <span class="stars">★★★★★</span>
+          <span class="stars" aria-hidden="true">★★★★★</span>
           <p>“I had an amazing experience at this mechanic shop. Walid and his son really went above and beyond with the work on my car. Professional, honest, and easy to talk to.”</p>
           <footer>Ahmed T.<small>Google review</small></footer>
         </blockquote>
         <blockquote>
-          <span class="stars">★★★★★</span>
+          <span class="stars" aria-hidden="true">★★★★★</span>
           <p>“I took my M240i for service and they did not disappoint. I don’t trust many with my car but with them it’s stress free. Ask for Walid, he’s a wizard on cars.”</p>
           <footer>Wassi<small>Google review</small></footer>
         </blockquote>
