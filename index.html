@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wally &amp; Son Auto Repair | Hamilton Mechanic</title>
+<meta name="description" content="Honest car assessment and repairs on Beach Rd, Hamilton. Family-run, fairly priced, 5.0 stars on Google. Call (905) 481-2942.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1d3a;--navy2:#132b52;--blue:#2b8cf0;--blue-d:#1a6fc9;--ink:#16202e;--muted:#5b6677;--bg:#fff;--soft:#f2f5f9;--line:#dfe5ee}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.05;margin:0;text-transform:uppercase;letter-spacing:.01em}
+a{color:var(--blue-d)}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.check{height:10px;background:repeating-conic-gradient(var(--navy) 0 25%,#fff 0 50%) 0 0/20px 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:24px;height:76px}
+header .logo img{height:58px;width:auto}
+header nav{display:flex;gap:22px;margin-left:auto}
+header nav a{color:var(--ink);text-decoration:none;font-weight:600}
+header nav a:hover{color:var(--blue-d)}
+header .btn{padding:10px 16px;font-size:17px}
+
+/* hero */
+.hero{position:relative;isolation:isolate;background:var(--navy);color:#fff;overflow:hidden}
+.hero .bgimg{position:absolute;inset:0;z-index:-1;background:url(img/shop-2.jpg) center/cover;opacity:.45}
+.hero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,var(--navy) 0 40%,rgba(11,29,58,.6) 75%,rgba(11,29,58,.2))}
+.hero .wrap{padding-top:96px;padding-bottom:104px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:#cfe3ff;margin-bottom:18px}
+.stars{color:#ffc93c;letter-spacing:2px}
+.hero h1{font-size:clamp(44px,7vw,84px);max-width:720px}
+.hero h1 span{color:var(--blue)}
+.hero p{font-size:20px;max-width:560px;color:#dbe6f5;margin:20px 0 32px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+
+/* strip */
+.strip{background:var(--blue);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:22px;padding-bottom:22px}
+.strip b{display:block;font:800 24px "Barlow Condensed",sans-serif;text-transform:uppercase}
+.strip span{color:#e3f0ff}
+
+section{padding:88px 0}
+.kicker{color:var(--blue-d);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;margin-bottom:8px}
+h2{font-size:clamp(34px,5vw,52px);color:var(--navy);margin-bottom:16px}
+.lede{color:var(--muted);max-width:620px;margin:0 0 40px}
+
+/* services */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--soft);border-radius:10px;padding:28px 24px;border-top:4px solid var(--blue)}
+.card svg{width:40px;height:40px;color:var(--blue-d);margin-bottom:14px}
+.card h3{font-size:26px;color:var(--navy);margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+
+/* about + shop */
+.about{background:var(--navy);color:#fff}
+.about h2{color:#fff}
+.about .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p{color:#c9d6ea}
+.about ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.about li{display:flex;gap:12px;align-items:flex-start}
+.about li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 12l5 5L19 8'/%3E%3C/svg%3E") center/14px no-repeat}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.photos figure{margin:0;aspect-ratio:1;overflow:hidden;border-radius:10px}
+.photos img{width:100%;height:100%;object-fit:cover}
+
+/* reviews */
+.reviews{background:var(--soft)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+blockquote{margin:0;background:#fff;border-radius:10px;padding:28px;box-shadow:0 1px 3px rgba(11,29,58,.08);display:flex;flex-direction:column}
+blockquote p{margin:10px 0 18px;flex:1}
+blockquote footer{font-weight:600;color:var(--navy)}
+blockquote footer small{display:block;font-weight:400;color:var(--muted)}
+.gbadge{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:99px;padding:8px 18px;font-weight:600;margin-bottom:36px;box-shadow:0 1px 3px rgba(11,29,58,.08)}
+
+/* visit + book */
+.visit .cols{display:grid;grid-template-columns:1fr 1.1fr;gap:48px}
+table{border-collapse:collapse;width:100%;margin:8px 0 24px}
+td{padding:9px 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;font-weight:600}
+tr.closed td:last-child{color:var(--muted);font-weight:400}
+.map{border:0;width:100%;height:260px;border-radius:10px}
+form{background:var(--soft);border-radius:12px;padding:32px;border-top:4px solid var(--blue)}
+form h3{font-size:32px;color:var(--navy);margin-bottom:6px}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:600;font-size:15px;margin-top:14px}
+input,select,textarea{width:100%;margin-top:5px;padding:12px;font:inherit;border:1px solid var(--line);border-radius:6px;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%;justify-content:center;margin-top:20px}
+.sent{display:none;margin-top:16px;padding:14px;border-radius:6px;background:#e3f6ea;color:#17683a;font-weight:600}
+
+/* footer */
+.foot{background:var(--navy);color:#c9d6ea;padding:48px 0 28px}
+.foot .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+.foot h3{color:#fff;font-size:22px;margin-bottom:10px}
+.foot a{color:#fff}
+.foot p{margin:0}
+.credit{border-top:1px solid var(--navy2);margin-top:36px;padding-top:20px;font-size:14px;color:#8ea3c4}
+.credit a{color:#8ea3c4}
+
+.mcall{display:none}
+@media (max-width:900px){
+  header nav{display:none}
+  header .btn{margin-left:auto}
+  .grid{grid-template-columns:1fr 1fr}
+  .about .cols,.visit .cols,.rgrid{grid-template-columns:1fr}
+  .foot .cols{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{padding-bottom:68px}
+  header .wrap{height:64px}
+  header .logo img{height:46px}
+  header .btn{display:none}
+  .hero .wrap{padding-top:64px;padding-bottom:72px}
+  .strip .wrap,.grid,form .row{grid-template-columns:1fr}
+  section{padding:64px 0}
+  form{padding:22px}
+  .mcall{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="img/logo.jpg" alt="Wally &amp; Son Auto Repair"></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; Location</a>
+    </nav>
+    <a class="btn btn-blue" href="tel:+19054812942">Call (905) 481-2942</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="bgimg" aria-hidden="true"></div>
+    <div class="shade" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="eyebrow"><span class="stars">★★★★★</span> 5.0 on Google · Beach Rd, Hamilton</div>
+      <h1>Honest repairs.<br><span>Fair prices.</span></h1>
+      <p>Family-run car assessment and repair in Hamilton's east end. We explain what your car needs, fix it right, and never overcharge.</p>
+      <div class="ctas">
+        <a class="btn btn-blue" href="tel:+19054812942">Call (905) 481-2942</a>
+        <a class="btn btn-ghost" href="#book">Book an appointment</a>
+      </div>
+    </div>
+  </div>
+  <div class="check"></div>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><b>Honest diagnosis</b><span>We show you the problem before we fix it.</span></div>
+      <div><b>Fast turnaround</b><span>Most repairs back to you the same week.</span></div>
+      <div><b>No surprise bills</b><span>The price we quote is the price you pay.</span></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="kicker">What we do</div>
+      <h2>Services</h2>
+      <p class="lede">From a check engine light to a full repair, bring it in and we'll take care of it.</p>
+      <div class="grid">
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v3l2 2"/></svg>
+          <h3>Car Assessment</h3>
+          <p>A full inspection and a clear explanation of what needs work now and what can wait.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+          <h3>General Repairs</h3>
+          <p>Engine, brakes, suspension and electrical work, done right the first time.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+          <h3>Tire Changes</h3>
+          <p>Seasonal swaps, new tires and mounting. Customers call us the best place in town for it.</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5v3h-2M3 15v3h2M3 15h18"/><circle cx="7.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg>
+          <h3>European &amp; Performance</h3>
+          <p>Comfortable with BMWs and other performance cars that most shops would rather not touch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap cols">
+      <div>
+        <div class="kicker" style="color:#7fb9ff">The "& Son" is real</div>
+        <h2>A family shop you can trust</h2>
+        <p>Wally &amp; Son is run by Walid and his son. Every car gets the same care we'd give our own: we take the time to explain the work, we don't upsell, and we stand behind every repair.</p>
+        <ul>
+          <li>Straight answers, in plain language</li>
+          <li>Quotes before any work starts</li>
+          <li>Local, independent, and right on Beach Rd</li>
+        </ul>
+      </div>
+      <div class="photos">
+        <figure><img src="img/shop-1.jpg" alt="Inside the Wally &amp; Son shop, a vehicle up on the lift" loading="lazy"></figure>
+        <figure><img src="img/shop-2.jpg" alt="Two vehicles in the service bays" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="kicker">Reviews</div>
+      <h2>What customers say</h2>
+      <div class="gbadge"><span class="stars">★★★★★</span> 5.0 average on Google</div>
+      <div class="rgrid">
+        <blockquote>
+          <span class="stars">★★★★★</span>
+          <p>“Amazing service! Honest, fast, and reliable. They fixed my car without any issues and didn’t overcharge me. Highly recommend!”</p>
+          <footer>Khadijah H.<small>Google review</small></footer>
+        </blockquote>
+        <blockquote>
+          <span class="stars">★★★★★</span>
+          <p>“I had an amazing experience at this mechanic shop. Walid and his son really went above and beyond with the work on my car. Professional, honest, and easy to talk to.”</p>
+          <footer>Ahmed T.<small>Google review</small></footer>
+        </blockquote>
+        <blockquote>
+          <span class="stars">★★★★★</span>
+          <p>“I took my M240i for service and they did not disappoint. I don’t trust many with my car but with them it’s stress free. Ask for Walid, he’s a wizard on cars.”</p>
+          <footer>Wassi<small>Google review</small></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap cols">
+      <div>
+        <div class="kicker">Visit us</div>
+        <h2>Hours &amp; location</h2>
+        <p><strong>450 Beach Rd, Hamilton, ON L8H 3K6</strong><br><a href="tel:+19054812942">(905) 481-2942</a></p>
+        <table>
+          <tr><td>Monday</td><td>9 a.m. – 6 p.m.</td></tr>
+          <tr><td>Tuesday</td><td>9 a.m. – 6 p.m.</td></tr>
+          <tr><td>Wednesday</td><td>9 a.m. – 6 p.m.</td></tr>
+          <tr><td>Thursday</td><td>9 a.m. – 6 p.m.</td></tr>
+          <tr><td>Friday</td><td>9 a.m. – 6 p.m.</td></tr>
+          <tr class="closed"><td>Saturday</td><td>Closed</td></tr>
+          <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <iframe class="map" title="Map to Wally &amp; Son Auto Repair" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Wally+%26+Son+Auto+Repair,+450+Beach+Rd,+Hamilton,+ON&output=embed"></iframe>
+      </div>
+
+      <form id="book">
+        <h3>Book an appointment</h3>
+        <p style="margin:0;color:var(--muted)">Tell us about your car and we'll call you back to confirm a time.</p>
+        <div class="row">
+          <div><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
+          <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+        </div>
+        <div class="row">
+          <div><label for="f-car">Vehicle</label><input id="f-car" name="vehicle" placeholder="e.g. 2016 Honda Civic"></div>
+          <div><label for="f-date">Preferred day</label><input id="f-date" name="date" type="date"></div>
+        </div>
+        <label for="f-service">Service</label>
+        <select id="f-service" name="service">
+          <option>Car assessment</option>
+          <option>General repair</option>
+          <option>Tire change</option>
+          <option>Not sure, need a diagnosis</option>
+        </select>
+        <label for="f-msg">What's going on?</label>
+        <textarea id="f-msg" name="message" placeholder="Noises, warning lights, anything you've noticed"></textarea>
+        <button class="btn btn-blue" type="submit">Request appointment</button>
+        <div class="sent" id="sent" role="status">Thanks! Your request was received and we'll call you shortly.<br><small style="font-weight:400">Demo preview: on the live site this request goes straight to the shop's inbox.</small></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div><h3>Wally &amp; Son Auto Repair</h3><p>Car assessment &amp; repairs<br>450 Beach Rd, Hamilton, ON L8H 3K6</p></div>
+      <div><h3>Call</h3><p><a href="tel:+19054812942">(905) 481-2942</a></p></div>
+      <div><h3>Hours</h3><p>Mon–Fri 9–6<br>Sat–Sun closed</p></div>
+    </div>
+    <div class="credit">Demo site by Tye Shields · <a href="mailto:Inquiries@tyeshields.ca">Inquiries@tyeshields.ca</a></div>
+  </div>
+</footer>
+
+<a class="btn btn-blue mcall" href="tel:+19054812942">Call (905) 481-2942</a>
+
+<script>
+// Demo only: the form doesn't send anywhere yet.
+document.getElementById('book').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('sent').style.display = 'block';
+  e.target.querySelector('button').disabled = true;
+});
+</script>
+</body>
+</html>
