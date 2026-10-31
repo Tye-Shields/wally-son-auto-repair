@@ -28,11 +28,11 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font:17px/1.6 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
-h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.05;margin:0;text-transform:uppercase;letter-spacing:.01em}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.05;margin:0;font-weight:600}
 a{color:var(--blue-d)}
 img{max-width:100%;display:block}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font:600 18px "Barlow Condensed",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer}
 .btn-blue{background:var(--blue-a);color:#fff}
 .btn-blue:hover{background:var(--blue-d)}
 .btn-ghost{border-color:#fff;color:#fff}
@@ -62,13 +62,13 @@ header .btn{padding:10px 16px;font-size:17px}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
 
 /* strip */
-.strip{background:var(--blue-a);color:#fff}
+.strip{background:var(--soft);color:var(--ink);border-bottom:1px solid var(--line)}
 .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-top:22px;padding-bottom:22px}
-.strip b{display:block;font:800 24px "Barlow Condensed",sans-serif;text-transform:uppercase}
-.strip span{color:#ecf5ff}
+.strip b{display:block;font:600 24px "Barlow Condensed",sans-serif}
+.strip span{color:var(--muted)}
 
 section{padding:88px 0}
-.kicker{color:var(--blue-d);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:14px;margin-bottom:8px}
+.kicker{color:var(--blue-d);font-weight:600;font-size:15px;margin-bottom:8px}
 h2{font-size:clamp(34px,5vw,52px);color:var(--navy);margin-bottom:16px}
 .lede{color:var(--muted);max-width:620px;margin:0 0 40px}
 
@@ -98,7 +98,7 @@ blockquote{margin:0;background:#fff;border-radius:10px;padding:28px;box-shadow:0
 blockquote p{margin:10px 0 18px;flex:1}
 blockquote footer{font-weight:600;color:var(--navy)}
 blockquote footer small{display:block;font-weight:400;color:var(--muted)}
-.gbadge{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:99px;padding:8px 18px;font-weight:600;margin-bottom:36px;box-shadow:0 1px 3px rgba(11,29,58,.08)}
+.gbadge{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:10px;padding:8px 16px;font-weight:600;margin-bottom:36px;box-shadow:0 1px 3px rgba(11,29,58,.08)}
 
 /* visit + book */
 .visit .cols{display:grid;grid-template-columns:1fr 1.1fr;gap:48px}
@@ -120,7 +120,7 @@ form .btn{width:100%;justify-content:center;margin-top:20px}
 /* footer */
 .foot{background:var(--navy);color:#c9d6ea;padding:48px 0 28px}
 .foot .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
-.foot .fh{color:#fff;font:700 22px/1.05 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:0 0 10px}
+.foot .fh{color:#fff;font:600 22px/1.05 "Barlow Condensed",sans-serif;margin:0 0 10px}
 address{font-style:normal}
 .progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transform-origin:0 50%;z-index:30}
 .motion :is(.strip .wrap>div,section .kicker,section h2,.lede,.card,blockquote,.about p,.about li,.visit address,.visit table,.map,form),.motion .hero .wrap>*{opacity:0}
@@ -172,8 +172,8 @@ address{font-style:normal}
     <div class="shade" aria-hidden="true"></div>
     <div class="wrap">
       <div class="eyebrow"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google · Beach Rd, Hamilton</div>
-      <h1>Hamilton auto repair.<br><span>Fair prices.</span></h1>
-      <p>Family-run car assessment and repair in Hamilton's east end. We explain what your car needs, fix it right, and never overcharge.</p>
+      <h1>Hamilton auto repair<br><span>Fair prices</span></h1>
+      <p>Family-run car assessment and repair in Hamilton's east end. Customers call us honest, fast and reliable.</p>
       <div class="ctas">
         <a class="btn btn-blue" href="tel:+19054812942">Call (905) 481-2942</a>
         <a class="btn btn-ghost" href="#book">Book an appointment</a>
@@ -184,9 +184,9 @@ address{font-style:normal}
 
   <div class="strip">
     <div class="wrap">
-      <div><b>Honest diagnosis</b><span>We show you the problem before we fix it.</span></div>
-      <div><b>5.0 on Google</b><span>Every review so far is five stars.</span></div>
-      <div><b>Family-run</b><span>A local shop on Beach Rd in Hamilton.</span></div>
+      <div><b>Honest service</b><span>Professional and easy to talk to</span></div>
+      <div><b>5.0 on Google</b><span>Every review so far is five stars</span></div>
+      <div><b>Family-run</b><span>A local shop on Beach Rd in Hamilton</span></div>
     </div>
   </div>
 
@@ -194,17 +194,17 @@ address{font-style:normal}
     <div class="wrap">
       <div class="kicker">Services in Hamilton</div>
       <h2>Services</h2>
-      <p class="lede">From a check engine light to a full repair, bring it in and we'll take care of it.</p>
+      <p class="lede">From a check engine light to a full repair, bring it in and we'll take care of it</p>
       <div class="grid">
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v3l2 2"/></svg>
           <h3>Car Assessment</h3>
-          <p>A full inspection and a clear explanation of what needs work now and what can wait.</p>
+          <p>A full inspection and a clear explanation of what needs work now and what can wait</p>
         </div>
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
           <h3>General Repairs</h3>
-          <p>Engine, brakes, suspension and electrical work, done right the first time.</p>
+          <p>Engine, brakes, suspension and electrical work, done right the first time</p>
         </div>
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
@@ -214,7 +214,7 @@ address{font-style:normal}
         <div class="card">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15l2-5a2 2 0 0 1 2-1h10a2 2 0 0 1 2 1l2 5v3h-2M3 15v3h2M3 15h18"/><circle cx="7.5" cy="18" r="1.8"/><circle cx="16.5" cy="18" r="1.8"/></svg>
           <h3>European &amp; Performance</h3>
-          <p>Comfortable with BMWs and other performance cars that most shops would rather not touch.</p>
+          <p>Comfortable with BMWs and other performance cars that most shops would rather not touch</p>
         </div>
       </div>
     </div>
@@ -225,7 +225,7 @@ address{font-style:normal}
       <div>
         <div class="kicker" style="color:#7fb9ff">The "& Son" is real</div>
         <h2>A family shop you can trust</h2>
-        <p>Wally &amp; Son is run by Walid and his son. Every car gets the same care we'd give our own: we take the time to explain the work, we don't upsell, and we stand behind every repair.</p>
+        <p>Wally &amp; Son is run by Walid and his son. Every car gets the same care we'd give our own: we're easy to talk to, and customers say it's stress-free.</p>
         <ul>
           <li>Straight answers, in plain language</li>
           <li>Quotes before any work starts</li>
@@ -304,7 +304,7 @@ address{font-style:normal}
         <label for="f-msg">What's going on?</label>
         <textarea id="f-msg" name="message" placeholder="Noises, warning lights, anything you've noticed"></textarea>
         <button class="btn btn-blue" type="submit">Request appointment</button>
-        <div class="sent" id="sent" role="status">Thanks! Your request was received and we'll call you shortly.<br><small style="font-weight:400">Demo preview: on the live site this request goes straight to the shop's inbox.</small></div>
+        <div class="sent" id="sent" role="status">Thanks. Your request was received and we'll call you shortly.<br><small style="font-weight:400">Demo preview: on the live site this request goes straight to the shop's inbox.</small></div>
       </form>
     </div>
   </section>
